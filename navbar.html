@@ -1,9 +1,113 @@
 <!-- navbar.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LividJester's Website</title>
+    <style>
+        body {
+            background-color: #2b2d30;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            margin: 0;
+        }
+
+        .topnav {
+            display: flex;
+            align-items: center;
+            background-color: #8e0c0c;
+            padding: 0 16px;
+            height: 50px;
+            position: relative;
+        }
+
+        .topnav p {
+            margin: 0;
+            padding-right: 16px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        #navLinks {
+            display: flex;
+            gap: 16px;
+        }
+
+        #navLinks a {
+            text-decoration: none;
+            font-size: 17px;
+            color: #aaaafa;
+        }
+
+        #navLinks a:visited {
+            color: #da75fa;
+        }
+
+        #navLinks a:hover {
+            color: #9b6afc;
+        }
+
+        #navLinks a:active {
+            color: #c66fa6;
+        }
+
+        .nav-toggle {
+            display: none;
+            margin-left: auto;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 5px 10px;
+            font-family: "Tahoma", "Verdana", sans-serif;
+            background-color: #2b2d30;
+            border: 2px outset #2b2d30;
+        }
+
+        .nav-toggle:hover {
+            background: #414447;
+        }
+
+        .nav-toggle:active {
+            border: 2px inset #2b2d30;
+        }
+
+        /* Mobile styles */
+        @media (max-width: 816px) {
+            #navLinks {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #8e0c0c;
+                position: absolute;
+                top: 50px; /* below header */
+                left: 0;
+                padding: 10px 0;
+            }
+
+            #navLinks.active {
+                display: flex;
+            }
+
+            .nav-toggle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
 <div class="topnav">
     <p>LividJester's Website</p>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="downloads.html">Downloads</a>
-    <a href="docs.html">Documentation</a>
+    <div id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="docs.html">Documentation</a>
+    </div>
+    <button class="nav-toggle" aria-label="toggle navigation" onclick="toggleMenu()">
+        Menu &#9776;
+    </button>
 </div>
+</body>
+</html>

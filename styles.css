@@ -8,10 +8,11 @@ body {
 
 .topnav {
     display: flex;
-    align-items: center; /* vertically center */
+    flex-wrap: wrap;
+    align-items: center;
     background-color: #8e0c0c;
     padding: 0 16px;
-    height: 50px; /* set height for consistency */
+    height: 50px;
 }
 
 .topnav p {
@@ -29,6 +30,11 @@ body {
 }
 
 
+header {
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
 
 
 
