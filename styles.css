@@ -1,0 +1,46 @@
+body {
+    background-color: #2b2d30;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+
+
+.topnav {
+    display: flex;
+    align-items: center; /* vertically center */
+    background-color: #8e0c0c;
+    padding: 0 16px;
+    height: 50px; /* set height for consistency */
+}
+
+.topnav p {
+    margin: 0;
+    padding: 0 16px 0 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.topnav a {
+    text-decoration: none;
+    font-size: 17px;
+    padding: 0 16px;
+
+}
+
+
+
+
+
+a:link {
+    color: #aaaafa;
+}
+a:visited {
+    color: #da75fa;
+}
+a:hover {
+    color: #9b6afc;
+}
+a:active {
+    color: #c66fa6;
+}
